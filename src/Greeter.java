@@ -1,6 +1,7 @@
 
 public class Greeter {
-	private String greeting;
+	
+	protected String greeting;
 	
 	public String getGreeting() {
 		return greeting;
