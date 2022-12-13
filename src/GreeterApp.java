@@ -42,28 +42,12 @@ public class GreeterApp {
 	 SimonGreeter g3 = new SimonGreeter (greeting);
 	 HTMLGreeter g4 = new HTMLGreeter(greeting);
 	 
+	System.out.println("How much volume would you like to add? (0-10)");
+	 int amountOfVolume = scnr.nextInt();
+	 for (int i = 0; i < amountOfVolume; i ++) {
+	 g2.addVolume();
 	 
-//	 scnr.close();
-//	 
-//	 System.out.println("How much volume would you like to add? (0-10)");
-//	Scanner scnr2 = new Scanner(System.in);
-//	
-//	 
-//	
-//	 int amountOfVolume = scnr2.nextInt();
-//	 for (int i = 0; i < amountOfVolume; i++) {
-//	 g2.addVolume();
-	
-//my way is below
-	
-//	 int amountOfVolume = 0;
-//	
-
-		 System.out.println("How much volume would you like to add? (0-10)");
-		  int amountOfVolume = scnr.nextInt();
-		  for (int i = 0; i < amountOfVolume; i ++) {
-	 	g2.addVolume();
-		  }
+	  }
 		
 	 System.out.println(g2.greet(name));
 	 System.out.println(g3.greet(name));
